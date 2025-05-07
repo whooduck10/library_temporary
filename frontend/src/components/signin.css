@@ -1,0 +1,168 @@
+/* ===== AdminSignInPage.css ===== */
+
+/* 1. Reset & base typography */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    background: #d1d1d1; /* the grey frame you had behind the card */
+}
+
+/* 2. Outer wrapper */
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* 3. Two‑panel card */
+.auth-shell {
+    width: 100%;
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 12px 48px rgba(0 0 0 / 0.12);
+}
+
+/* 4a. Left panel (sign‑in form) */
+.panel-left {
+    background: #fafde7;
+    padding: 4rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.panel-left .logo {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 2rem;
+}
+
+.panel-left h1 {
+    font-size: clamp(2.25rem, 5vw, 3.25rem);
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 1rem;
+}
+
+.panel-left p {
+    color: #444;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+/* 4b. Inputs & buttons */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input {
+    appearance: none;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #cfcfcf;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    transition: border-color 0.2s ease;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #224c73;
+}
+
+.forgot {
+    font-size: 0.875rem;
+    color: #000;
+    margin: -0.5rem 0 0.5rem;
+    text-decoration: none;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    cursor: pointer;
+    border: none;
+    background: #5f8f96;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.8rem;
+    border-radius: 0.75rem;
+    transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: #4d7a7f;
+}
+
+/* 5. Right panel (brand / sign‑up) */
+.panel-right {
+    background: #224c73;
+    color: #ffffff;
+    padding: 4rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* mimic that big rounded inner corner */
+    border-top-left-radius: 4rem;
+}
+
+.panel-right .logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 2rem;
+}
+
+.brand-name {
+    font-size: clamp(3rem, 6.5vw, 5rem);
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.brand-sub {
+    letter-spacing: 0.35em;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.signup-text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.btn-outline {
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.75rem 3rem;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+    background: #ffffff;
+    color: #224c73;
+}

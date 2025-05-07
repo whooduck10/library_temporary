@@ -1,0 +1,186 @@
+/* Layout Base */
+.dashboard-wrapper {
+    display: flex;
+    height: 100vh;
+    background: #d1d1d1;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #224c73;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    color: white;
+}
+
+.sidebar-logo img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 12px;
+}
+
+.sidebar-nav,
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.nav-button.active,
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Section */
+.dashboard-main {
+    flex-grow: 1;
+    background: #fafde7;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Bar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.role {
+    display: block;
+    font-size: 0.75rem;
+    color: gray;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.85rem;
+}
+
+.gear {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Widget Area */
+.widgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.widget {
+    background: white;
+    padding: 20px;
+    font-weight: 600;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease;
+}
+
+.widget:hover {
+    transform: translateY(-3px);
+}
+
+/* Chart and Quote Section */
+.chart-quote {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.chart-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.chart-logo {
+    text-align: center;
+}
+
+.chart-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.quote-box {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    font-style: italic;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quote-box blockquote {
+    margin: 0;
+}
+
+.pie-chart {
+    width: 300px;
+    text-align: center;
+}
+
+.pie {
+    width: 100%;
+    transform: rotate(-90deg);
+}
+
+.pie-bg {
+    fill: none;
+    stroke: #333;
+    stroke-width: 32;
+}
+
+.pie-fill {
+    fill: none;
+    stroke: #5b80c1;
+    stroke-width: 32;
+}
+
+.legend {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    text-align: left;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.dot.black {
+    background: #333;
+}
+
+.dot.blue {
+    background: #5b80c1;
+}
