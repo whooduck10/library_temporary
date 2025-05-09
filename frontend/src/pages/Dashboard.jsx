@@ -43,7 +43,7 @@ export default function Dashboard() {
                     </header>
 
                     <section className="widgets">
-                        <button className="widget" onClick={() => window.location.href = "/BorrowedBooks"}>📖 BorrowedBooks</button>
+                        <button className="widget" onClick={() => window.location.href = "/borrowed"}>📖 BorrowedBooks</button>
                         <button className="widget" onClick={() => window.location.href = "/ReturnedBook"}>📤 ReturnBooks</button>
                         <div className="widget">👆 Let's browse available book inventory</div>
                     </section>
