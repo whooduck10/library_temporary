@@ -16,7 +16,7 @@ export default function Dashboard() {
                 <aside className="sidebar">
                     <div className="sidebar-logo">
                     <img
-                                src="../public/Group.svg" // Path relative to your public directory
+                                src="../Group.svg" // Path relative to your public directory
                                 alt="Logo" // Important for accessibility
                                 width="24"
                                 height="24"
@@ -26,7 +26,7 @@ export default function Dashboard() {
                     <nav className="sidebar-nav">
                         <button className="nav-button active" onClick={() => window.location.href = "/borrowed"}>
                         <img
-                                src="../public/home.svg" // Path relative to your public directory
+                                src="../home.svg" // Path relative to your public directory
                                 alt="HomepageHomepage" // Important for accessibility
                                 width="24"
                                 height="24"
@@ -35,7 +35,7 @@ export default function Dashboard() {
                         </button>
                         <button className="nav-button" onClick={() => window.location.href = "/returned"}>
                             <img
-                                src="../public/Books.svg" // Path relative to your public directory
+                                src="../Books.svg" // Path relative to your public directory
                                 alt="Books of User" // Important for accessibility
                                 width="24"
                                 height="24"
@@ -44,7 +44,7 @@ export default function Dashboard() {
                         </button>
                         <button className="nav-button">
                         <img
-                                src="../public/book-1 1.svg" // Path relative to your public directory
+                                src="../book-1 1.svg" // Path relative to your public directory
                                 alt="Books of User" // Important for accessibility
                                 width="24"
                                 height="24"
@@ -56,7 +56,7 @@ export default function Dashboard() {
                     <div className="sidebar-footer">
                         <button className="nav-button">
                         <img
-                                src="../public/logout.svg" // Path relative to your public directory
+                                src="../logout.svg" // Path relative to your public directory
                                 alt="Logout" // Important for accessibility
                                 width="24"
                                 height="24"
@@ -71,7 +71,7 @@ export default function Dashboard() {
                     <header className="topbar" style={{ backgroundColor: "white", padding: "10px 20px", borderRadius: "8px", marginBottom: "20px" }}>
                         <div style={{ color: "black" }}>
                             <img
-                                src="../public/user 1.svg" // Path relative to your public directory
+                                src="../user 1.svg" // Path relative to your public directory
                                 alt="" // Important for accessibility
                                 width="24"
                                 height="24"
@@ -85,7 +85,7 @@ export default function Dashboard() {
                             <div className="date">Sep 02, 2023</div>
                             <button className="gear">
                             <img
-                                src="../public/setting.svg" // Path relative to your public directory
+                                src="../setting.svg" // Path relative to your public directory
                                 alt="options" // Important for accessibility
                                 width="24"
                                 height="24"
@@ -105,7 +105,7 @@ export default function Dashboard() {
                         <div className="chart-section">
                             <div className="chart-logo" style={{ color: "black" }}>
                             <img
-                                src="../public/SvgjsG2242.svg" // Path relative to your public directory
+                                src="../SvgjsG2242.svg" // Path relative to your public directory
                                 alt="Logo" // Important for accessibility
                                 width="30"
                                 height="3Nisal Gunasekara0"
