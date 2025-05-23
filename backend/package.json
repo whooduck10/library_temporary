@@ -10,10 +10,10 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^16.5.0",
-<<<<<<< HEAD
-=======
-    "env": "^0.0.2",
->>>>>>> 80bddf9d87ffd1fb0d645ad1466db65c8dd8516a
+
+
+  
+
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "mongoose": "^8.15.0",
