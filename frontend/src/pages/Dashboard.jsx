@@ -96,30 +96,9 @@ export default function Dashboard() {
                     </header>
 
                     <section className="widgets">
-                        <button className="widget" onClick={() => window.location.href = "/borrowed"}>
-                        <img
-                                src="../public/book-square.svg" // Path relative to your public directory
-                                alt="HomepageHomepage" // Important for accessibility
-                                width="24"
-                                height="24"
-                                style={{ verticalAlign: 'middle' }} // Adjust as needed for alignment
-                            /> BorrowedBooks</button>
-                        <button className="widget" onClick={() => window.location.href = "/returned"}>
-                        <img
-                                src="../public/return.svg" // Path relative to your public directory
-                                alt="HomepageHomepage" // Important for accessibility
-                                width="24"
-                                height="24"
-                                style={{ verticalAlign: 'middle' }} // Adjust as needed for alignment
-                            /> ReturnBooks</button>
-                        <div className="widget">
-                        <img
-                                src="../public/available.png" // Path relative to your public directory
-                                alt="HomepageHomepage" // Important for accessibility
-                                width="24"
-                                height="24"
-                                style={{ verticalAlign: 'middle' }} // Adjust as needed for alignment
-                            /> Let's browse available book inventory</div>
+                        <button className="widget" onClick={() => window.location.href = "/BorrowedBooks"}>📖 BorrowedBooks</button>
+                        <button className="widget" onClick={() => window.location.href = "/ReturnedBook"}>📤 ReturnBooks</button>
+                        <div className="widget">👆 Let's browse available book inventory</div>
                     </section>
 
                     <section className="chart-quote">
