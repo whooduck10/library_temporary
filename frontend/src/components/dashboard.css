@@ -1,7 +1,8 @@
 /* Layout Base */
 .dashboard-wrapper {
+    
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
     background: #d1d1d1;
     font-family: 'Segoe UI', sans-serif;
 }
@@ -48,9 +49,10 @@
 
 /* Main Section */
 .dashboard-main {
+    
     flex-grow: 1;
     background: #fafde7;
-    padding: 24px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
 }

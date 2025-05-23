@@ -10,21 +10,59 @@ import logo from "../assets/react.svg";
 
 export default function Dashboard() {
     return (
-        <div className="dashboard-container" style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+        <div className="dashboard-container" style={{  minHeight: "100vh", minWidth: "100vh",display: "flex", flexDirection: "column" }}>
             <div className="dashboard-wrapper" style={{ display: "flex", flex: 1 }}>
                 {/* Sidebar */}
                 <aside className="sidebar">
                     <div className="sidebar-logo">
-                        <img src={logo} alt="Logo" />
+                    <img
+                                src="../public/Group.svg" // Path relative to your public directory
+                                alt="Logo" // Important for accessibility
+                                width="24"
+                                height="24"
+                                style={{ verticalAlign: 'middle' }} // Adjust as needed for alignment
+                            />
                     </div>
                     <nav className="sidebar-nav">
-                        <button className="nav-button active">📚</button>
-                        <button className="nav-button">✏️</button>
-                        <button className="nav-button">📖</button>
+                        <button className="nav-button active" onClick={() => window.location.href = "/borrowed"}>
+                        <img
+                                src="../public/home.svg" // Path relative to your public directory
+                                alt="HomepageHomepage" // Important for accessibility
+                                width="24"
+                                height="24"
+                                style={{ verticalAlign: 'middle' }} // Adjust as needed for alignment
+                            />
+                        </button>
+                        <button className="nav-button" onClick={() => window.location.href = "/returned"}>
+                            <img
+                                src="../public/Books.svg" // Path relative to your public directory
+                                alt="Books of User" // Important for accessibility
+                                width="24"
+                                height="24"
+                                style={{ verticalAlign: 'middle' }} // Adjust as needed for alignment
+                            />
+                        </button>
+                        <button className="nav-button">
+                        <img
+                                src="../public/book-1 1.svg" // Path relative to your public directory
+                                alt="Books of User" // Important for accessibility
+                                width="24"
+                                height="24"
+                                style={{ verticalAlign: 'middle' }} // Adjust as needed for alignment
+                            />
+                        </button>
 
                     </nav>
                     <div className="sidebar-footer">
-                        <button className="nav-button">🔓</button>
+                        <button className="nav-button">
+                        <img
+                                src="../public/logout.svg" // Path relative to your public directory
+                                alt="Logout" // Important for accessibility
+                                width="24"
+                                height="24"
+                                style={{ verticalAlign: 'middle' }} // Adjust as needed for alignment
+                            />
+                        </button>
                     </div>
                 </aside>
 
@@ -32,26 +70,68 @@ export default function Dashboard() {
                 <main className="dashboard-main" style={{ flexGrow: 1, padding: "20px" }}>
                     <header className="topbar" style={{ backgroundColor: "white", padding: "10px 20px", borderRadius: "8px", marginBottom: "20px" }}>
                         <div style={{ color: "black" }}>
+                            <img
+                                src="../public/user 1.svg" // Path relative to your public directory
+                                alt="" // Important for accessibility
+                                width="24"
+                                height="24"
+                                style={{ verticalAlign: 'middle' }} // Adjust as needed for alignment
+                            />
                             <strong>Nisal Gunasekara</strong>
                             <span className="role">User</span>
                         </div>
                         <div className="topbar-right" style={{ color: "black" }}>
                             <div className="time">12:29 PM</div>
                             <div className="date">Sep 02, 2023</div>
-                            <button className="gear">⚙️</button>
+                            <button className="gear">
+                            <img
+                                src="../public/setting.svg" // Path relative to your public directory
+                                alt="options" // Important for accessibility
+                                width="24"
+                                height="24"
+                                // style={{ verticalAlign: 'middle' }} // Adjust as needed for alignment
+                            />
+                            </button>
                         </div>
                     </header>
 
                     <section className="widgets">
-                        <button className="widget" onClick={() => window.location.href = "/BorrowedBooks"}>📖 BorrowedBooks</button>
-                        <button className="widget" onClick={() => window.location.href = "/ReturnedBook"}>📤 ReturnBooks</button>
-                        <div className="widget">👆 Let's browse available book inventory</div>
+                        <button className="widget" onClick={() => window.location.href = "/borrowed"}>
+                        <img
+                                src="../public/book-square.svg" // Path relative to your public directory
+                                alt="HomepageHomepage" // Important for accessibility
+                                width="24"
+                                height="24"
+                                style={{ verticalAlign: 'middle' }} // Adjust as needed for alignment
+                            /> BorrowedBooks</button>
+                        <button className="widget" onClick={() => window.location.href = "/returned"}>
+                        <img
+                                src="../public/return.svg" // Path relative to your public directory
+                                alt="HomepageHomepage" // Important for accessibility
+                                width="24"
+                                height="24"
+                                style={{ verticalAlign: 'middle' }} // Adjust as needed for alignment
+                            /> ReturnBooks</button>
+                        <div className="widget">
+                        <img
+                                src="../public/available.png" // Path relative to your public directory
+                                alt="HomepageHomepage" // Important for accessibility
+                                width="24"
+                                height="24"
+                                style={{ verticalAlign: 'middle' }} // Adjust as needed for alignment
+                            /> Let's browse available book inventory</div>
                     </section>
 
                     <section className="chart-quote">
                         <div className="chart-section">
                             <div className="chart-logo" style={{ color: "black" }}>
-                                <img src={logo} alt="BookWorm Logo" />
+                            <img
+                                src="../public/SvgjsG2242.svg" // Path relative to your public directory
+                                alt="Logo" // Important for accessibility
+                                width="30"
+                                height="3Nisal Gunasekara0"
+                                style={{ verticalAlign: 'middle' }} // Adjust as needed for alignment
+                            />
                                 <h2>BookWorm</h2>
                                 <p>LIBRARY</p>
                             </div>
